@@ -1,14 +1,10 @@
 OntCversion = '2.0.0'
-from ontology.interop.Ontology.Contract import Migrate
-from ontology.interop.System.App import RegisterAppCall, DynamicAppCall
-from ontology.interop.System.Storage import GetContext, Get, Put, Delete
-from ontology.interop.System.Runtime import CheckWitness, GetTime, Notify, Serialize, Deserialize
+from ontology.interop.System.Runtime import CheckWitness
 from ontology.interop.System.ExecutionEngine import GetExecutingScriptHash, GetScriptContainer
 from ontology.interop.Ontology.Native import Invoke
-from ontology.interop.Ontology.Runtime import GetCurrentBlockHash, Base58ToAddress
-from ontology.builtins import concat, state, sha256
+from ontology.interop.Ontology.Runtime import GetCurrentBlockHash
+from ontology.builtins import state
 from ontology.interop.System.Transaction import GetTransactionHash
-from ontology.libont import int, elt_in, str
 from ontology.builtins import abs
 
 """
